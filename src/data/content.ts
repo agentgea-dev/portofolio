@@ -51,13 +51,13 @@ export const socials = [
 export const about = {
   heading: "ABOUT",
   paragraphs: [
-    "Self-taught Fullstack Developer with 3+ years building performant, accessible web applications from database to pixel — skills sharpened through intensive bootcamps and real client projects. I specialize in React/Next.js on the front and Node.js/PostgreSQL on the back.",
+    "Self-taught Fullstack Developer with 2+ years building performant, accessible web applications from database to pixel — skills sharpened through self-directed study and real, shipped projects. I specialize in React/Next.js on the front and Node.js/PostgreSQL on the back.",
     "My strength is owning a feature end-to-end — turning fuzzy product ideas into shipped, maintainable software. I care about clean architecture, fast load times, and interfaces that feel effortless.",
     "Lately I focus on AI engineering — integrating LLMs (OpenAI / Claude), building RAG pipelines and AI-powered chat features into real production apps.",
   ],
   // Quick stats beside the bio — kept to numbers a client can actually verify on this page.
   stats: [
-    { value: "3+", label: "Years experience" },
+    { value: "2+", label: "Years experience" },
     { value: "8+", label: "Live projects" },
     { value: "100%", label: "Remote-ready" },
   ],
@@ -104,7 +104,7 @@ export const languages = [
 ];
 
 /** EXPERIENCE — the blue-dot timeline in the middle column */
-// Mix of real work + self-built projects (bootcamp/self-taught background).
+// Mix of real freelance work + self-built projects (self-taught background).
 // 👉 Replace with your actual roles, clients, capstones & years.
 // Grounded in real, shipped, clickable work — no invented employers or metrics.
 export const experience = [
@@ -138,28 +138,22 @@ export const experience = [
   },
 ];
 
-// No university — fully self-taught through bootcamps & intensive courses.
-// 👉 Replace the names/years/titles below with the bootcamps you actually took.
+// No university, no bootcamps — 100% self-taught. Honest, verifiable framing only.
 export const education = [
   {
-    period: "2023",
-    title: "Fullstack JavaScript Bootcamp",
-    org: "Hacktiv8",
+    period: "2022 — Now",
+    title: "Self-Taught Fullstack Development",
+    org: "Self-directed — online courses, official docs & hands-on projects",
   },
   {
-    period: "2022",
-    title: "React & Next.js Intensive",
-    org: "Dicoding Indonesia",
+    period: "2024 — Now",
+    title: "AI Engineering — LLMs, RAG & Agents",
+    org: "Self-directed study",
   },
   {
-    period: "2021",
-    title: "Backend Engineering — Node.js & SQL",
-    org: "Purwadhika Digital School",
-  },
-  {
-    period: "2020",
-    title: "Frontend Web Foundations",
-    org: "BuildWithAngga",
+    period: "2021 — 2022",
+    title: "Web Foundations — HTML, CSS & JavaScript",
+    org: "Self-directed",
   },
 ];
 

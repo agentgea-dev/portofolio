@@ -95,7 +95,7 @@ export default function Skills() {
                 ))}
               </ol>
 
-              <ColTitle>Bootcamps &amp; Training</ColTitle>
+              <ColTitle>Learning &amp; Self-Study</ColTitle>
               <div className="space-y-4">
                 {education.map((ed, i) => (
                   <div key={i} className="flex items-start gap-3">
