@@ -41,12 +41,10 @@ export const nav = [
   { label: "Portfolio", href: "#portfolio" },
 ];
 
+// Only real, working links — empty placeholders erode client trust.
+// Add LinkedIn / X back here once you have the real profile URLs.
 export const socials = [
-  { label: "GitHub", href: "https://github.com/", icon: "github" },
-  { label: "LinkedIn", href: "https://linkedin.com/", icon: "linkedin" },
-  { label: "X / Twitter", href: "https://x.com/", icon: "twitter" },
-  { label: "Dribbble", href: "https://dribbble.com/", icon: "dribbble" },
-  { label: "Instagram", href: "https://instagram.com/", icon: "instagram" },
+  { label: "GitHub", href: "https://github.com/agentgea-dev", icon: "github" },
   { label: "Email", href: "mailto:ajizaelani19@gmail.com", icon: "mail" },
 ] as const;
 
@@ -57,11 +55,11 @@ export const about = {
     "My strength is owning a feature end-to-end — turning fuzzy product ideas into shipped, maintainable software. I care about clean architecture, fast load times, and interfaces that feel effortless.",
     "Lately I focus on AI engineering — integrating LLMs (OpenAI / Claude), building RAG pipelines and AI-powered chat features into real production apps.",
   ],
-  // A few quick stats shown beside the bio
+  // Quick stats beside the bio — kept to numbers a client can actually verify on this page.
   stats: [
     { value: "3+", label: "Years experience" },
-    { value: "40+", label: "Projects shipped" },
-    { value: "20+", label: "Happy clients" },
+    { value: "8+", label: "Live projects" },
+    { value: "100%", label: "Remote-ready" },
   ],
 };
 
@@ -108,30 +106,35 @@ export const languages = [
 /** EXPERIENCE — the blue-dot timeline in the middle column */
 // Mix of real work + self-built projects (bootcamp/self-taught background).
 // 👉 Replace with your actual roles, clients, capstones & years.
+// Grounded in real, shipped, clickable work — no invented employers or metrics.
 export const experience = [
   {
     period: "2024 — Now",
     role: "Freelance Fullstack Developer",
-    company: "Self-employed",
-    summary: "Membangun web app & landing page untuk klien UMKM (Next.js, Node, Supabase).",
+    company: "Self-employed · Remote",
+    summary:
+      "Building and shipping production web tools for the Indonesian market — bulk J&T shipping labels, Rupiah invoicing, PPh 21 tax calculator — with Next.js & TypeScript, deployed live on Vercel.",
+  },
+  {
+    period: "2024 — Now",
+    role: "AI Engineering (self-directed)",
+    company: "Independent",
+    summary:
+      "Integrating LLMs (OpenAI / Claude), building RAG pipelines and AI chat features into real web applications.",
   },
   {
     period: "2023",
-    role: "Web Developer (Kontrak)",
-    company: "Studio Digital Lokal",
-    summary: "Mengembangkan dashboard internal & integrasi REST API untuk tim operasional.",
+    role: "Freelance Web Developer",
+    company: "Remote · local SMB clients",
+    summary:
+      "Company-profile sites, internal dashboards and REST API integrations for small businesses (Next.js, Node, Supabase).",
   },
   {
     period: "2023",
-    role: "Proyek — E-Commerce App",
-    company: "Capstone Bootcamp",
-    summary: "Toko online fullstack: katalog, keranjang, payment gateway (Next.js + PostgreSQL).",
-  },
-  {
-    period: "2022",
-    role: "Proyek — Company Profile & CMS",
-    company: "Freelance",
-    summary: "Situs profil perusahaan dengan CMS ringan, optimasi SEO & performa.",
+    role: "Project — E-Commerce Web App",
+    company: "Personal build",
+    summary:
+      "Fullstack online store: product catalog, cart and checkout flow (Next.js + PostgreSQL).",
   },
 ];
 
@@ -180,61 +183,56 @@ export const interests = [
   { label: "Travel", icon: "plane" },
 ];
 
-/** PROJECTS — the portfolio grid */
+/**
+ * PROJECTS — real, deployed, clickable work (also the source for the PDF resume).
+ * The live site pulls these from GitHub (repos tagged `portfolio`); this array is
+ * the truthful fallback + resume source. Keep it real — every href must work.
+ */
 export const projects = [
   {
-    title: "Nimbus Analytics",
-    category: "SaaS Dashboard",
+    title: "Generator Label J&T Massal",
+    category: "Web Tool",
     description:
-      "Real-time analytics platform with custom charting, role-based access and a Stripe-powered billing flow.",
-    tags: ["Next.js", "tRPC", "PostgreSQL", "Recharts"],
-    href: "#",
+      "Bulk shipping-label generator for Indonesian J&T couriers — paste/upload a CSV of orders and print 100×150mm PDF labels, fully in-browser with no backend.",
+    tags: ["Next.js", "TypeScript", "jsPDF"],
+    href: "https://2026-06-23-jnt-label-generator.vercel.app",
     accent: "from-cyan-400/20 to-blue-600/20",
   },
   {
-    title: "Bazaar Commerce",
-    category: "E-commerce",
+    title: "Invoice Generator IDR",
+    category: "Web Tool",
     description:
-      "Headless storefront with sub-second navigation, Algolia search and an admin CMS.",
-    tags: ["Next.js", "Shopify API", "Tailwind"],
-    href: "#",
+      "Rupiah invoice & receipt builder: automatic terbilang (number-to-words), PPN 11%, A5 print mode and localStorage state — no login, no backend.",
+    tags: ["JavaScript", "PDF", "localStorage"],
+    href: "https://2026-06-25-invoice-generator-idr.vercel.app",
     accent: "from-violet-400/20 to-fuchsia-600/20",
   },
   {
-    title: "Orbit Chat",
-    category: "Realtime App",
+    title: "Kalkulator PPh 21 TER",
+    category: "Web Tool",
     description:
-      "Low-latency group chat with WebSockets, presence, typing indicators and message search.",
-    tags: ["Node.js", "Socket.io", "Redis"],
-    href: "#",
+      "Indonesian income-tax calculator (PPh 21 TER, PMK 168/2023) with BPJS deductions, a step-by-step breakdown and a printable A5 payslip — fully client-side.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    href: "https://2026-06-27-kalkulator-pph21-ter.vercel.app",
     accent: "from-emerald-400/20 to-teal-600/20",
   },
   {
-    title: "Atlas Design System",
-    category: "Open Source",
+    title: "Export Commodity B2B Template",
+    category: "Web Template",
     description:
-      "A themeable React component library with 50+ accessible components and full docs.",
-    tags: ["React", "Radix", "Storybook"],
-    href: "#",
+      "SEO-first Astro landing site for Indonesian commodity exporters — JSON-LD product schema, sitemap and OG tags — re-skinnable from a single config file.",
+    tags: ["Astro", "TypeScript", "SEO"],
+    href: "https://2026-06-25-export-commodity-template.vercel.app",
     accent: "from-amber-400/20 to-orange-600/20",
   },
   {
-    title: "Voyage 3D",
-    category: "WebGL / 3D",
+    title: "Sakura Anki N3",
+    category: "Web App",
     description:
-      "Interactive product configurator rendered with React Three Fiber and GPU instancing.",
-    tags: ["Three.js", "R3F", "GLSL"],
-    href: "#",
+      "Gamified JLPT N3 study app — Japanese grammar and vocabulary flashcards with a spaced-repetition flow, built to make N3 prep feel fun.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+    href: "https://nihongo-n3.vercel.app/landing.html",
     accent: "from-sky-400/20 to-indigo-600/20",
-  },
-  {
-    title: "DevPulse API",
-    category: "Backend",
-    description:
-      "GraphQL API aggregating CI/CD metrics with caching, rate limiting and webhooks.",
-    tags: ["GraphQL", "Prisma", "Docker"],
-    href: "#",
-    accent: "from-rose-400/20 to-pink-600/20",
   },
 ];
 
