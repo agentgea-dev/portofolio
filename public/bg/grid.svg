@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Tileable blueprint grid: thin minor lines + a brighter cross node -->
+  <path d="M64 0H0V64" fill="none" stroke="#2ea9e4" stroke-width="1" />
+  <path d="M0 0h2M0 0v2" stroke="#38bdf8" stroke-width="2" />
+</svg>
