@@ -220,6 +220,15 @@ export const projects = [
     accent: "from-amber-400/20 to-orange-600/20",
   },
   {
+    title: "SMK Job-Ready Pack",
+    category: "Landing Page",
+    description:
+      "Sales landing page for an Indonesian SMK-graduate job-readiness bundle — ATS-safe CV templates, interview Q&A and application-email formats, with a clear who/what/why layout.",
+    tags: ["Web", "Landing Page", "SEO"],
+    href: "https://2026-06-24-smk-job-ready-pack.vercel.app",
+    accent: "from-rose-400/20 to-pink-600/20",
+  },
+  {
     title: "Sakura Anki N3",
     category: "Web App",
     description:
