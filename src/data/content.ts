@@ -237,6 +237,24 @@ export const projects = [
     href: "https://nihongo-n3.vercel.app/landing.html",
     accent: "from-sky-400/20 to-indigo-600/20",
   },
+  {
+    title: "Kalkulator HPP UMKM",
+    category: "Digital Product",
+    description:
+      "Ready-to-use spreadsheet (.xlsx) for Indonesian food & beverage micro-businesses — computes cost of goods (HPP), minimum selling price, margin and break-even across 5 linked sheets, with a filled example and a Bahasa Indonesia how-to PDF.",
+    tags: ["Spreadsheet", "Excel", "UMKM"],
+    href: "https://github.com/agentgea-dev/kalkulator-hpp-umkm",
+    accent: "from-amber-400/20 to-orange-600/20",
+  },
+  {
+    title: "Panduan NIB & Izin Usaha OSS",
+    category: "Ebook",
+    description:
+      "Practical Bahasa Indonesia PDF guide (11 pages) walking UMKM owners through registering an NIB business licence on the OSS RBA portal — document checklist, 7-step walkthrough, common errors and a printable checklist.",
+    tags: ["Ebook", "PDF", "UMKM"],
+    href: "https://github.com/agentgea-dev/panduan-nib-oss",
+    accent: "from-cyan-400/20 to-blue-600/20",
+  },
 ];
 
 export const contact = {
