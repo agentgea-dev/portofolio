@@ -255,6 +255,15 @@ export const projects = [
     href: "https://github.com/agentgea-dev/panduan-nib-oss",
     accent: "from-cyan-400/20 to-blue-600/20",
   },
+  {
+    title: "FLB Showcase",
+    category: "Research",
+    description:
+      "Pre-registered favorite-longshot bias calibration study on Polymarket — pre-registration, out-of-sample testing, cost-net analysis and an honest null result.",
+    tags: ["Research", "Data", "Polymarket"],
+    href: "https://github.com/agentgea-dev/flb-showcase",
+    accent: "from-violet-400/20 to-fuchsia-600/20",
+  },
 ];
 
 export const contact = {
