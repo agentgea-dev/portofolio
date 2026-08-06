@@ -55,7 +55,8 @@ export const about = {
     "My strength is owning a feature end-to-end — turning fuzzy product ideas into shipped, maintainable software. I care about clean architecture, fast load times, and interfaces that feel effortless.",
     "Lately I focus on AI engineering — integrating LLMs (OpenAI / Claude), building RAG pipelines and AI-powered chat features into real production apps.",
   ],
-  // Quick stats beside the bio — kept to numbers a client can actually verify on this page.
+  // Quick stats — rendered in the PDF resume (not on the page). Keep to numbers a client
+  // can actually verify from the project list below.
   stats: [
     { value: "2+", label: "Years experience" },
     { value: "8+", label: "Live projects" },

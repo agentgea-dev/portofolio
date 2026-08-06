@@ -117,7 +117,8 @@ export default function Work({ projects }: { projects: Project[] }) {
           </div>
           <Reveal delay={0.1}>
             <p className="max-w-xs text-sm text-chalk-muted">
-              A mix of SaaS products, e-commerce and open-source — built end to end.
+              Web tools, landing pages and digital products for the Indonesian market — built
+              end to end and shipped live.
             </p>
           </Reveal>
         </div>
