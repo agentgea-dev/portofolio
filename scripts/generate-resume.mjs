@@ -146,7 +146,7 @@ const colLX = L;
 const colRX = L + colW + colGap;
 const startY = doc.y;
 
-doc.font(BOLD).fontSize(9).fillColor(INK).text("Editing & Skills", colLX, startY);
+doc.font(BOLD).fontSize(9).fillColor(INK).text("Core Skills", colLX, startY);
 doc.font(BOLD).fontSize(9).fillColor(INK).text("Languages", colRX, startY);
 const barsY = doc.y + 6;
 

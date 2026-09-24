@@ -25,7 +25,7 @@ const fullName = `${profile.firstName} ${profile.lastName}`;
 export const metadata: Metadata = {
   title: `${fullName} — ${profile.role}`,
   description: profile.tagline,
-  keywords: ["Video Editor", "Content Creator", "TikTok Editor", "CapCut", "DaVinci Resolve", "Portfolio", fullName],
+  keywords: ["Video Editor", "Content Creator", "Fullstack Developer", "Next.js", "AI Engineering", "CapCut", "DaVinci Resolve", "Portfolio", fullName],
   authors: [{ name: fullName }],
   openGraph: {
     title: `${fullName} — ${profile.role}`,

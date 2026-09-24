@@ -9,10 +9,10 @@
 export const profile = {
   firstName: "AJI",
   lastName: "ZAELANI",
-  role: "Video Editor · Content Creator · Admin Digital",
+  role: "Video Editor & Content Creator · Fullstack Web & AI Developer",
   // Short one-liner shown in the hero
   tagline:
-    "I cut raw footage into scroll-stopping vertical video — and handle the admin ops that keep a content pipeline on time.",
+    "I edit scroll-stopping vertical video and ship production web & AI tools — two skill tracks, built in parallel, both live and working.",
   email: "muhammadajizaelani@gmail.com",
   phone: "0823-1626-9203",
   // GitHub username — the Work section pulls public repos tagged "portfolio" from here
@@ -20,7 +20,7 @@ export const profile = {
   // Location is shown bottom-left of the About section (two lines, like the reference)
   city: "Cianjur, Indonesia",
   street: "Cianjur, West Java",
-  availability: "Full-time WFH — available now",
+  availability: "Full-time & freelance — remote / WFH",
   // Path under /public — drop your CV file there
   resumeUrl: "/resume.pdf",
   // ── Hero background ─────────────────────────────────────────────────────
@@ -53,44 +53,50 @@ export const socials = [
 export const about = {
   heading: "ABOUT",
   paragraphs: [
-    "For the past four years I worked at a food factory in Japan, while running a TikTok video-clipping side hustle after hours — cutting vertical video, writing subtitles, and building animated captions.",
-    "That grew into building my own website and an AI-powered auto video-clipping app. I'm now based in Cianjur, looking for a long-term WFH role where I can own content production end-to-end — from raw footage to a file that's ready to publish.",
-    "I'm used to working independently against targets, communicating over chat, and handling admin work that needs to stay tidy and on time.",
+    "For the past four years (Aug 2022 – 2026) I've worked full-time at a food factory in Japan. Outside working hours, I built two skill tracks in parallel, self-taught: video editing — cutting and editing vertical content for TikTok/Reels, complete with subtitles and animated captions — and web/AI development — building production web tools (Next.js, TypeScript, LLM integrations) that are live and in use.",
+    "I'm now based in Cianjur, open to full-time or freelance work in either — or both — of these tracks, with a work discipline that's already been tested: shipping real projects while working full-time shifts.",
   ],
   // Quick stats — rendered in the PDF resume (not on the page). Keep to numbers a client
   // can actually verify from the project list below.
   stats: [
     { value: "4+", label: "Years experience" },
-    { value: "N4", label: "Japanese (JLPT)" },
-    { value: "100%", label: "WFH ready" },
+    { value: "2", label: "Parallel skill tracks" },
+    { value: "100%", label: "Remote-ready" },
   ],
 };
 
 /** SKILLS — proficiency bars (like the reference's "Software Skills" sliders) */
 export const techStack = [
   { name: "CapCut / DaVinci Resolve", level: 95 },
+  { name: "React / Next.js / TypeScript", level: 92 },
   { name: "Vertical Video (9:16 Format)", level: 95 },
+  { name: "AI Engineering (LLM / RAG)", level: 85 },
   { name: "Subtitle & Animated Captions", level: 92 },
+  { name: "Node.js / PostgreSQL", level: 82 },
   { name: "Audio & Dubbing Sync", level: 80 },
-  { name: "Canva / Visual Design", level: 85 },
-  { name: "Meta Ads & Social Media", level: 75 },
-  { name: "Admin & Web Tools", level: 82 },
 ];
 
 /** TOOLS & PLATFORMS — shown as tag chips */
 export const tools = [
   "CapCut",
-  "Alight Motion",
   "DaVinci Resolve",
+  "Alight Motion",
   "Canva",
   "Meta Ads Manager",
-  "Google Workspace",
   "Sony A7C",
-  "Voice Over & Dubbing",
-  "Spreadsheet / Excel",
-  "WhatsApp / Telegram",
-  "AI Image Generation",
   "Next.js / React",
+  "TypeScript",
+  "Node.js / Express",
+  "PostgreSQL / Prisma",
+  "GraphQL / tRPC",
+  "OpenAI / Claude API",
+  "LangChain",
+  "RAG / Vector DB",
+  "Docker",
+  "AWS",
+  "Vercel",
+  "Google Workspace",
+  "WhatsApp / Telegram",
 ];
 
 /** Spoken languages — kept from the reference layout */
@@ -108,28 +114,28 @@ export const experience = [
     role: "Food Production Staff",
     company: "Fujimoto Rice Delica Co., Ltd. · Japan",
     summary:
-      "Produced bento and Japanese dishes to strict factory quality and schedule standards. Worked shift-based with tight targets for quantity, cleanliness and punctuality — while running video-clipping work on the side outside working hours.",
+      "Full-time primary job: produced bento and Japanese dishes to strict factory quality and schedule standards, shift-based with tight targets for quantity and punctuality — while running two self-directed tracks outside working hours: video editing and web/AI development.",
   },
   {
     period: "2022 — Now",
     role: "Video Editor & Clipper — TikTok Content",
     company: "Independent · Remote",
     summary:
-      "Cut long-form video into short, vertical, publish-ready clips: moment selection, cut timing, subtitles, animated captions and music — a consistent editing style across a high volume of clips.",
+      "Cut long-form video into short, vertical, publish-ready clips: moment selection, cut timing, subtitles, animated captions and music.",
   },
   {
     period: "Self-directed project",
     role: "Developer — Auto Clip (AI auto-clipping app)",
     company: "Independent · Remote",
     summary:
-      "Built an app that automatically cuts long video into short, publish-ready clips with subtitles. Designed a modular caption system — text-reveal style, word emphasis, motion and position — for consistent results across many videos. Owned the whole pipeline: input, render, quality control, through to a publish-ready file.",
+      "Built an app that automatically cuts long video into short, publish-ready clips with subtitles, including a modular 4-axis caption system for consistent results across many videos.",
   },
   {
-    period: "Self-directed project",
-    role: "Website & Web App Builder",
+    period: "2023 — Now",
+    role: "Freelance Fullstack Developer",
     company: "Independent · Remote",
     summary:
-      "Built a portfolio website and booking system for a photo studio, landing pages, and a web-based learning app — design through to a live, working website, handled solo.",
+      "Shipped production web tools live on Vercel — bulk J&T shipping labels, Rupiah invoicing, a PPh 21 tax calculator (Next.js, TypeScript). Self-directed LLM integration (OpenAI/Claude) and RAG pipelines since 2024, plus company-profile sites, internal dashboards and REST API work for local SMB clients (2023).",
   },
 ];
 
@@ -141,8 +147,8 @@ export const education = [
   },
   {
     period: "2022 — Now",
-    title: "Self-Taught Video Editing & AI Tooling",
-    org: "Self-directed — CapCut, Alight Motion, DaVinci Resolve, AI automation",
+    title: "Self-Taught Video Editing & Web/AI Development",
+    org: "Self-directed — CapCut, DaVinci Resolve, Next.js, LLM / RAG, hands-on projects",
   },
 ];
 
@@ -150,19 +156,19 @@ export const education = [
 export const services = [
   "Vertical Video Editing (TikTok / Reels / Shorts)",
   "Subtitle & Animated Captions",
+  "Web App Development (Next.js)",
+  "AI / LLM Integration & RAG",
   "Voice Over & Dubbing Sync",
-  "Thumbnail & Social Visual Design",
+  "REST API & Backend Integration",
   "Meta Ads Setup & Content Strategy",
-  "Content Scheduling & Admin",
-  "Product Photo & Video (Sony A7C)",
-  "Website & Web App Building",
+  "Admin & Content Scheduling",
 ];
 
 /** INTERESTS — small icon grid bottom-right of the reference */
 export const interests = [
   { label: "Video & Film", icon: "film" },
+  { label: "Open Source", icon: "code" },
   { label: "Photography", icon: "camera" },
-  { label: "Audio & Music", icon: "music" },
   { label: "Language Learning", icon: "languages" },
 ];
 
@@ -248,5 +254,5 @@ export const projects = [
 
 export const contact = {
   heading: "LET'S WORK TOGETHER",
-  subheading: "Need content produced or a tool built? I'm one message away.",
+  subheading: "Need video content, a web app, or an AI integration built? I'm one message away.",
 };
