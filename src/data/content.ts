@@ -14,7 +14,7 @@ export const profile = {
   tagline:
     "I cut raw footage into scroll-stopping vertical video — and handle the admin ops that keep a content pipeline on time.",
   email: "muhammadajizaelani@gmail.com",
-  phone: "+62 823-1626-9203",
+  phone: "0823-1626-9203",
   // GitHub username — the Work section pulls public repos tagged "portfolio" from here
   github: "agentgea-dev",
   // Location is shown bottom-left of the About section (two lines, like the reference)
