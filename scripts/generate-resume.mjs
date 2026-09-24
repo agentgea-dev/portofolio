@@ -139,13 +139,14 @@ experience.forEach((e) => {
 
 // ── Skills (two columns) + Tools ─────────────────────────────────────────────
 heading("Skills");
+ensure(280); // keep both bar columns starting on the same page — avoids a mid-list split
 const colGap = 30;
 const colW = (CW - colGap) / 2;
 const colLX = L;
 const colRX = L + colW + colGap;
 const startY = doc.y;
 
-doc.font(BOLD).fontSize(9).fillColor(INK).text("Tech Stack", colLX, startY);
+doc.font(BOLD).fontSize(9).fillColor(INK).text("Editing & Skills", colLX, startY);
 doc.font(BOLD).fontSize(9).fillColor(INK).text("Languages", colRX, startY);
 const barsY = doc.y + 6;
 
@@ -189,6 +190,7 @@ education.forEach((ed) => {
 
 // ── What I Do + Interests ────────────────────────────────────────────────────
 heading("What I Do");
+ensure(160); // keep both bullet columns starting on the same page — avoids a mid-list split
 const sStartY = doc.y;
 const sColW = (CW - colGap) / 2;
 // services as a two-column bullet list

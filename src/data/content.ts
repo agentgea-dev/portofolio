@@ -9,17 +9,18 @@
 export const profile = {
   firstName: "AJI",
   lastName: "ZAELANI",
-  role: "Fullstack Developer",
+  role: "Video Editor · Content Creator · Admin Digital",
   // Short one-liner shown in the hero
-  tagline: "I design and ship end-to-end web products — pixel to API.",
-  email: "ajizaelani19@gmail.com",
+  tagline:
+    "I cut raw footage into scroll-stopping vertical video — and handle the admin ops that keep a content pipeline on time.",
+  email: "muhammadajizaelani@gmail.com",
   phone: "+62 823-1626-9203",
   // GitHub username — the Work section pulls public repos tagged "portfolio" from here
   github: "agentgea-dev",
   // Location is shown bottom-left of the About section (two lines, like the reference)
   city: "Cianjur, Indonesia",
   street: "Cianjur, West Java",
-  availability: "Available for freelance & full-time",
+  availability: "Full-time WFH — available now",
   // Path under /public — drop your CV file there
   resumeUrl: "/resume.pdf",
   // ── Hero background ─────────────────────────────────────────────────────
@@ -44,138 +45,125 @@ export const nav = [
 // Only real, working links — empty placeholders erode client trust.
 // Add LinkedIn / X back here once you have the real profile URLs.
 export const socials = [
+  { label: "WhatsApp", href: "https://wa.me/6282316269203", icon: "whatsapp" },
   { label: "GitHub", href: "https://github.com/agentgea-dev", icon: "github" },
-  { label: "Email", href: "mailto:ajizaelani19@gmail.com", icon: "mail" },
+  { label: "Email", href: "mailto:muhammadajizaelani@gmail.com", icon: "mail" },
 ] as const;
 
 export const about = {
   heading: "ABOUT",
   paragraphs: [
-    "Self-taught Fullstack Developer with 2+ years building performant, accessible web applications from database to pixel — skills sharpened through self-directed study and real, shipped projects. I specialize in React/Next.js on the front and Node.js/PostgreSQL on the back.",
-    "My strength is owning a feature end-to-end — turning fuzzy product ideas into shipped, maintainable software. I care about clean architecture, fast load times, and interfaces that feel effortless.",
-    "Lately I focus on AI engineering — integrating LLMs (OpenAI / Claude), building RAG pipelines and AI-powered chat features into real production apps.",
+    "For the past four years I worked at a food factory in Japan, while running a TikTok video-clipping side hustle after hours — cutting vertical video, writing subtitles, and building animated captions.",
+    "That grew into building my own website and an AI-powered auto video-clipping app. I'm now based in Cianjur, looking for a long-term WFH role where I can own content production end-to-end — from raw footage to a file that's ready to publish.",
+    "I'm used to working independently against targets, communicating over chat, and handling admin work that needs to stay tidy and on time.",
   ],
   // Quick stats — rendered in the PDF resume (not on the page). Keep to numbers a client
   // can actually verify from the project list below.
   stats: [
-    { value: "2+", label: "Years experience" },
-    { value: "8+", label: "Live projects" },
-    { value: "100%", label: "Remote-ready" },
+    { value: "4+", label: "Years experience" },
+    { value: "N4", label: "Japanese (JLPT)" },
+    { value: "100%", label: "WFH ready" },
   ],
 };
 
-/** TECH STACK — proficiency bars (like the reference's "Software Skills" sliders) */
+/** SKILLS — proficiency bars (like the reference's "Software Skills" sliders) */
 export const techStack = [
-  { name: "React / Next.js", level: 95 },
-  { name: "TypeScript", level: 92 },
-  { name: "AI Engineering (LLM / RAG)", level: 88 },
-  { name: "Node.js / Express", level: 90 },
-  { name: "PostgreSQL / Prisma", level: 85 },
-  { name: "Tailwind / CSS", level: 93 },
-  { name: "Docker / CI-CD", level: 80 },
+  { name: "CapCut / DaVinci Resolve", level: 95 },
+  { name: "Vertical Video (9:16 Format)", level: 95 },
+  { name: "Subtitle & Animated Captions", level: 92 },
+  { name: "Audio & Dubbing Sync", level: 80 },
+  { name: "Canva / Visual Design", level: 85 },
+  { name: "Meta Ads & Social Media", level: 75 },
+  { name: "Admin & Web Tools", level: 82 },
 ];
 
 /** TOOLS & PLATFORMS — shown as tag chips */
 export const tools = [
-  "Next.js",
-  "React",
-  "Node.js",
-  "TypeScript",
-  "OpenAI / Claude API",
-  "LangChain",
-  "RAG / Vector DB",
-  "Hugging Face",
-  "GraphQL",
-  "PostgreSQL",
-  "Redis",
-  "Prisma",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Figma",
-  "Three.js",
-  "tRPC",
+  "CapCut",
+  "Alight Motion",
+  "DaVinci Resolve",
+  "Canva",
+  "Meta Ads Manager",
+  "Google Workspace",
+  "Sony A7C",
+  "Voice Over & Dubbing",
+  "Spreadsheet / Excel",
+  "WhatsApp / Telegram",
+  "AI Image Generation",
+  "Next.js / React",
 ];
 
 /** Spoken languages — kept from the reference layout */
 export const languages = [
   { name: "Indonesian", level: 100 },
-  { name: "English", level: 76 },
-  { name: "Japanese", level: 45 },
+  { name: "Japanese", level: 55 },
+  { name: "English", level: 40 },
 ];
 
 /** EXPERIENCE — the blue-dot timeline in the middle column */
-// Mix of real freelance work + self-built projects (self-taught background).
-// 👉 Replace with your actual roles, clients, capstones & years.
-// Grounded in real, shipped, clickable work — no invented employers or metrics.
+// Grounded in real, verifiable work — no invented employers or metrics.
 export const experience = [
   {
-    period: "2024 — Now",
-    role: "Freelance Fullstack Developer",
-    company: "Self-employed · Remote",
+    period: "Aug 2022 — 2026",
+    role: "Food Production Staff",
+    company: "Fujimoto Rice Delica Co., Ltd. · Japan",
     summary:
-      "Building and shipping production web tools for the Indonesian market — bulk J&T shipping labels, Rupiah invoicing, PPh 21 tax calculator — with Next.js & TypeScript, deployed live on Vercel.",
+      "Produced bento and Japanese dishes to strict factory quality and schedule standards. Worked shift-based with tight targets for quantity, cleanliness and punctuality — while running video-clipping work on the side outside working hours.",
   },
   {
-    period: "2024 — Now",
-    role: "AI Engineering (self-directed)",
-    company: "Independent",
+    period: "2022 — Now",
+    role: "Video Editor & Clipper — TikTok Content",
+    company: "Independent · Remote",
     summary:
-      "Integrating LLMs (OpenAI / Claude), building RAG pipelines and AI chat features into real web applications.",
+      "Cut long-form video into short, vertical, publish-ready clips: moment selection, cut timing, subtitles, animated captions and music — a consistent editing style across a high volume of clips.",
   },
   {
-    period: "2023",
-    role: "Freelance Web Developer",
-    company: "Remote · local SMB clients",
+    period: "Self-directed project",
+    role: "Developer — Auto Clip (AI auto-clipping app)",
+    company: "Independent · Remote",
     summary:
-      "Company-profile sites, internal dashboards and REST API integrations for small businesses (Next.js, Node, Supabase).",
+      "Built an app that automatically cuts long video into short, publish-ready clips with subtitles. Designed a modular caption system — text-reveal style, word emphasis, motion and position — for consistent results across many videos. Owned the whole pipeline: input, render, quality control, through to a publish-ready file.",
   },
   {
-    period: "2023",
-    role: "Project — E-Commerce Web App",
-    company: "Personal build",
+    period: "Self-directed project",
+    role: "Website & Web App Builder",
+    company: "Independent · Remote",
     summary:
-      "Fullstack online store: product catalog, cart and checkout flow (Next.js + PostgreSQL).",
+      "Built a portfolio website and booking system for a photo studio, landing pages, and a web-based learning app — design through to a live, working website, handled solo.",
   },
 ];
 
-// No university, no bootcamps — 100% self-taught. Honest, verifiable framing only.
 export const education = [
   {
+    period: "Graduated 2019",
+    title: "SMK Mandiri Bersemi Cianjur",
+    org: "Teknik Komputer dan Jaringan (TKJ)",
+  },
+  {
     period: "2022 — Now",
-    title: "Self-Taught Fullstack Development",
-    org: "Self-directed — online courses, official docs & hands-on projects",
-  },
-  {
-    period: "2024 — Now",
-    title: "AI Engineering — LLMs, RAG & Agents",
-    org: "Self-directed study",
-  },
-  {
-    period: "2021 — 2022",
-    title: "Web Foundations — HTML, CSS & JavaScript",
-    org: "Self-directed",
+    title: "Self-Taught Video Editing & AI Tooling",
+    org: "Self-directed — CapCut, Alight Motion, DaVinci Resolve, AI automation",
   },
 ];
 
 /** WHAT I DO — the right-hand "What can I do?" column */
 export const services = [
-  "Web App Development",
-  "AI / LLM Integration",
-  "RAG & Chatbot Systems",
-  "REST & GraphQL APIs",
-  "Design Systems & UI",
-  "Performance Optimization",
-  "Database Architecture",
-  "Cloud Deployment & DevOps",
+  "Vertical Video Editing (TikTok / Reels / Shorts)",
+  "Subtitle & Animated Captions",
+  "Voice Over & Dubbing Sync",
+  "Thumbnail & Social Visual Design",
+  "Meta Ads Setup & Content Strategy",
+  "Content Scheduling & Admin",
+  "Product Photo & Video (Sony A7C)",
+  "Website & Web App Building",
 ];
 
 /** INTERESTS — small icon grid bottom-right of the reference */
 export const interests = [
-  { label: "Open Source", icon: "code" },
-  { label: "3D / WebGL", icon: "box" },
+  { label: "Video & Film", icon: "film" },
   { label: "Photography", icon: "camera" },
-  { label: "Travel", icon: "plane" },
+  { label: "Audio & Music", icon: "music" },
+  { label: "Language Learning", icon: "languages" },
 ];
 
 /**
@@ -259,6 +247,6 @@ export const projects = [
 ];
 
 export const contact = {
-  heading: "LET'S BUILD SOMETHING",
-  subheading: "Have a project in mind? I'm one message away.",
+  heading: "LET'S WORK TOGETHER",
+  subheading: "Need content produced or a tool built? I'm one message away.",
 };

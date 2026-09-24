@@ -9,6 +9,10 @@ import {
   Box,
   Camera,
   Plane,
+  Film,
+  Music,
+  Languages as LanguagesIcon,
+  MessageCircle,
   type LucideIcon,
 } from "lucide-react";
 
@@ -23,6 +27,10 @@ const map: Record<string, LucideIcon> = {
   box: Box,
   camera: Camera,
   plane: Plane,
+  film: Film,
+  music: Music,
+  languages: LanguagesIcon,
+  whatsapp: MessageCircle,
 };
 
 export default function Icon({

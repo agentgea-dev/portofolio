@@ -58,7 +58,7 @@ export default function Skills() {
           {/* Column 1 — Tech stack + languages */}
           <Reveal>
             <div>
-              <ColTitle>Tech Stack</ColTitle>
+              <ColTitle>Editing &amp; Skills</ColTitle>
               <div className="space-y-5">
                 {techStack.map((s) => (
                   <SkillBar key={s.name} name={s.name} level={s.level} />
