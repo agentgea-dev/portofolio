@@ -33,6 +33,11 @@ type Repo = {
   pushed_at: string;
 };
 
+/** Curated entries keyed by href — the human-written title/category/description wins. */
+const curated = new Map(
+  (fallbackProjects as Project[]).map((p) => [p.href.replace(/\/$/, ""), p]),
+);
+
 function titleize(name: string): string {
   return name
     .replace(/[-_]+/g, " ")
@@ -64,13 +69,19 @@ export async function getGithubProjects(): Promise<Project[]> {
     return picked.map((r, i) => {
       const topics = (r.topics ?? []).filter((t) => t !== "portfolio");
       const tags = [r.language, ...topics].filter(Boolean).slice(0, 4) as string[];
+      const href = r.homepage || r.html_url;
+      // Prefer the curated entry: GitHub's repo name and primary language produce
+      // wrong labels (a spreadsheet repo reads "Python", "kalkulator-pph21-ter"
+      // titleizes to "Kalkulator Pph21 TER"). Only untagged-in-content.ts repos
+      // fall back to the derived values, so new projects still appear automatically.
+      const match = curated.get(href.replace(/\/$/, "")) ?? curated.get(r.html_url);
       return {
-        title: titleize(r.name),
-        category: r.language || topics[0] || "Project",
-        description: r.description || "Open-source project — see the repo.",
-        tags,
-        href: r.homepage || r.html_url,
-        accent: ACCENTS[i % ACCENTS.length],
+        title: match?.title ?? titleize(r.name),
+        category: match?.category ?? r.language ?? topics[0] ?? "Project",
+        description: match?.description ?? r.description ?? "Open-source project — see the repo.",
+        tags: match?.tags ?? tags,
+        href,
+        accent: match?.accent ?? ACCENTS[i % ACCENTS.length],
         preview: r.homepage || null,
       };
     });
