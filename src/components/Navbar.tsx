@@ -80,7 +80,9 @@ export default function Navbar() {
         <button
           onClick={() => setOpen((v) => !v)}
           className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-chalk md:hidden"
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
         >
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -88,7 +90,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="border-t border-white/[0.06] bg-ink/95 backdrop-blur-xl md:hidden">
+        <div id="mobile-menu" className="border-t border-white/[0.06] bg-ink/95 backdrop-blur-xl md:hidden">
           <ul className="container-px flex flex-col py-4">
             {nav.map((item) => (
               <li key={item.href}>
