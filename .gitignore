@@ -28,3 +28,6 @@ yarn-error.log*
 next-env.d.ts
 .keeper/
 .openclaw/
+
+# agent runtime state (not part of the site)
+openclaw-workspace-state.json
