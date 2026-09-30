@@ -52,9 +52,9 @@ export const socials = [
 
 export const about = {
   heading: "ABOUT",
+  // One tight paragraph: who I am → remote profession → specialization → value for the client.
   paragraphs: [
-    "For the past four years (Aug 2022 – 2026) I've worked full-time at a food factory in Japan. Outside working hours, I built two skill tracks in parallel, self-taught: video editing — cutting and editing vertical content for TikTok/Reels, complete with subtitles and animated captions — and web/AI development — building production web tools (Next.js, TypeScript, LLM integrations) that are live and in use.",
-    "I'm now based in Cianjur, open to full-time or freelance work in either — or both — of these tracks, with a work discipline that's already been tested: shipping real projects while working full-time shifts.",
+    "I'm Aji Zaelani, a remote-based creative and developer running two skill tracks in parallel: video editing for vertical TikTok/Reels content, and fullstack web & AI development for production tools built with Next.js, TypeScript and LLM integrations. Both were self-taught over four years while working full-time shifts at a food factory in Japan, and both are proven — eight real projects shipped and live today. I help clients get either scroll-stopping short-form video or a working web/AI tool, fast, without the back-and-forth. Now based in Cianjur, open to full-time or freelance work in either track — or both.",
   ],
   // Quick stats — rendered in the PDF resume (not on the page). Keep to numbers a client
   // can actually verify from the project list below.
