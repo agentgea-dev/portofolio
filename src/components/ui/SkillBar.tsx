@@ -16,8 +16,7 @@ export default function SkillBar({ name, level }: { name: string; level: number 
         <motion.div
           className="absolute inset-y-0 left-0 rounded-full bg-accent-grad"
           initial={reduce ? { width: `${level}%` } : { width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          viewport={{ once: true, margin: "-60px" }}
+          animate={{ width: `${level}%` }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
           {/* knob */}
