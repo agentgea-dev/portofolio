@@ -60,11 +60,11 @@ export default function Contact() {
                     <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-accent/10 text-accent">
                       <Cmp size={18} />
                     </span>
-                    <div>
+                    <div className="min-w-0">
                       <div className="text-2xs uppercase tracking-wide text-chalk-dim">
                         {it.label}
                       </div>
-                      <div className="text-sm text-chalk">{it.value}</div>
+                      <div className="break-all text-sm text-chalk">{it.value}</div>
                     </div>
                   </div>
                 );
