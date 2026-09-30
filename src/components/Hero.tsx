@@ -78,7 +78,7 @@ export default function Hero() {
           {/* Last name — the dominant element: huge, extra-bold */}
           <motion.h1
             {...rise(0.12)}
-            className="mt-1 font-display text-[3.75rem] font-extrabold uppercase leading-[0.85] tracking-tight text-white sm:text-7xl lg:text-8xl"
+            className="mt-1 font-display text-6xl font-extrabold uppercase leading-[0.85] tracking-tight text-white sm:text-7xl lg:text-8xl"
           >
             {profile.lastName}
           </motion.h1>

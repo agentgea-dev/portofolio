@@ -32,7 +32,7 @@ export default function Contact() {
                 </h2>
               </Reveal>
               <Reveal delay={0.1}>
-                <p className="mt-4 max-w-md text-[15px] leading-relaxed text-chalk-muted">
+                <p className="mt-4 max-w-md text-base leading-relaxed text-chalk-muted">
                   {contact.subheading}
                 </p>
               </Reveal>
@@ -61,7 +61,7 @@ export default function Contact() {
                       <Cmp size={18} />
                     </span>
                     <div>
-                      <div className="text-[11px] uppercase tracking-wide text-chalk-dim">
+                      <div className="text-2xs uppercase tracking-wide text-chalk-dim">
                         {it.label}
                       </div>
                       <div className="text-sm text-chalk">{it.value}</div>

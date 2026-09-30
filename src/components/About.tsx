@@ -28,7 +28,7 @@ export default function About() {
           <div className="mt-10 space-y-4">
             {about.paragraphs.map((p, i) => (
               <Reveal key={i} delay={0.1 + i * 0.08}>
-                <p className="max-w-md text-[15px] leading-[1.8] text-chalk-muted">{p}</p>
+                <p className="max-w-md text-base leading-[1.8] text-chalk-muted">{p}</p>
               </Reveal>
             ))}
           </div>

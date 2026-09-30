@@ -23,7 +23,10 @@ const config: Config = {
         chalk: {
           DEFAULT: "#f5f7fa",
           muted: "#aab1bb",
-          dim: "#6b7280",
+          // #6b7280 measured ~3.7:1 on card surfaces — below WCAG AA (4.5:1) at the
+          // 11-13px sizes this token is used at. #7c8493 clears 4.7:1 on cards / 5.2:1
+          // on the page background while staying visually dimmer than chalk-muted.
+          dim: "#7c8493",
         },
         // Single brand accent (azure -> cyan), matching the reference dots/links
         accent: {
@@ -38,6 +41,11 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-display)", "system-ui", "sans-serif"],
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+      },
+      // One extra step below Tailwind's `xs` (12px) for micro-labels/badges —
+      // replaces scattered one-off text-[11px]/[12px]/[13px]/[15px] arbitrary values.
+      fontSize: {
+        "2xs": "0.6875rem", // 11px
       },
       letterSpacing: {
         widest2: "0.35em",

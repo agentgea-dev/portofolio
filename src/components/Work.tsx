@@ -69,7 +69,7 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
               <div className="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:22px_22px]" />
             </>
           )}
-          <span className="absolute left-4 top-4 z-10 rounded-full border border-white/15 bg-ink/50 px-3 py-1 text-[11px] font-medium tracking-wide text-chalk backdrop-blur-sm">
+          <span className="absolute left-4 top-4 z-10 rounded-full border border-white/15 bg-ink/50 px-3 py-1 text-2xs font-medium tracking-wide text-chalk backdrop-blur-sm">
             {p.category}
           </span>
           <motion.span
@@ -83,13 +83,13 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
         <h3 className="font-display text-lg font-bold text-white transition-colors group-hover:text-accent">
           {p.title}
         </h3>
-        <p className="mt-2 flex-1 text-[13px] leading-relaxed text-chalk-muted">{p.description}</p>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-chalk-muted">{p.description}</p>
 
         <div className="mt-4 flex flex-wrap gap-1.5">
           {p.tags.map((t) => (
             <span
               key={t}
-              className="rounded-md bg-white/[0.04] px-2 py-1 text-[11px] text-chalk-dim"
+              className="rounded-md bg-white/[0.04] px-2 py-1 text-2xs text-chalk-dim"
             >
               {t}
             </span>

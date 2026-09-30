@@ -85,12 +85,12 @@ export default function Skills() {
                     <span className="absolute -left-[7px] top-1 grid h-3.5 w-3.5 place-items-center rounded-full bg-accent shadow-glow">
                       <span className="h-1.5 w-1.5 rounded-full bg-white" />
                     </span>
-                    <span className="text-[11px] font-medium uppercase tracking-wide text-accent">
+                    <span className="text-2xs font-medium uppercase tracking-wide text-accent">
                       {job.period}
                     </span>
                     <h4 className="mt-1 text-sm font-semibold text-white">{job.role}</h4>
-                    <p className="text-[13px] text-chalk-muted">{job.company}</p>
-                    <p className="mt-1 text-[12px] leading-relaxed text-chalk-dim">{job.summary}</p>
+                    <p className="text-sm text-chalk-muted">{job.company}</p>
+                    <p className="mt-1 text-xs leading-relaxed text-chalk-dim">{job.summary}</p>
                   </li>
                 ))}
               </ol>
@@ -102,8 +102,8 @@ export default function Skills() {
                     <GraduationCap size={18} className="mt-0.5 shrink-0 text-accent" />
                     <div>
                       <h4 className="text-sm font-semibold text-white">{ed.title}</h4>
-                      <p className="text-[13px] text-chalk-muted">{ed.org}</p>
-                      <p className="text-[11px] uppercase tracking-wide text-chalk-dim">{ed.period}</p>
+                      <p className="text-sm text-chalk-muted">{ed.org}</p>
+                      <p className="text-2xs uppercase tracking-wide text-chalk-dim">{ed.period}</p>
                     </div>
                   </div>
                 ))}
@@ -117,7 +117,7 @@ export default function Skills() {
               <ColTitle>What I Do</ColTitle>
               <ul className="space-y-3">
                 {services.map((s) => (
-                  <li key={s} className="flex items-center gap-3 text-[13px] text-chalk-muted">
+                  <li key={s} className="flex items-center gap-3 text-sm text-chalk-muted">
                     <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-accent/15 text-accent">
                       <Check size={12} />
                     </span>
@@ -131,7 +131,7 @@ export default function Skills() {
                 {tools.map((t) => (
                   <span
                     key={t}
-                    className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[12px] text-chalk-muted transition-colors hover:border-accent/50 hover:text-white"
+                    className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-chalk-muted transition-colors hover:border-accent/50 hover:text-white"
                   >
                     {t}
                   </span>
@@ -148,7 +148,7 @@ export default function Skills() {
                     <span className="grid h-9 w-9 place-items-center rounded-full bg-accent/10 text-accent">
                       <Icon name={it.icon} size={16} />
                     </span>
-                    <span className="text-[12px] text-chalk-muted">{it.label}</span>
+                    <span className="text-xs text-chalk-muted">{it.label}</span>
                   </div>
                 ))}
               </div>

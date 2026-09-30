@@ -9,8 +9,8 @@ export default function SkillBar({ name, level }: { name: string; level: number 
   return (
     <div className="group">
       <div className="mb-2 flex items-center justify-between">
-        <span className="text-[13px] font-medium text-chalk">{name}</span>
-        <span className="text-[11px] tabular-nums text-chalk-dim">{level}%</span>
+        <span className="text-sm font-medium text-chalk">{name}</span>
+        <span className="text-2xs tabular-nums text-chalk-dim">{level}%</span>
       </div>
       <div className="relative h-[3px] w-full rounded-full bg-white/10">
         <motion.div
